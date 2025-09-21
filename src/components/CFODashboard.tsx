@@ -5,6 +5,7 @@ import { Slider } from '@/components/ui/slider';
 import { Badge } from '@/components/ui/badge';
 import { Switch } from '@/components/ui/switch';
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, PieChart, Pie, Cell, CustomTooltip } from '@/components/SimpleChart';
+import { ThemeToggle } from './ThemeToggle';
 import { TrendingUp, Users, DollarSign, Zap, FileText, BarChart3, Target, AlertCircle } from 'lucide-react';
 
 interface FinancialInputs {
@@ -106,6 +107,7 @@ const CFODashboard = () => {
                 <Badge variant="outline">{reportsGenerated} reports</Badge>
               </div>
             </div>
+            <ThemeToggle />
             <Button onClick={generateReport} className="bg-gradient-primary shadow-button">
               <FileText className="h-4 w-4 mr-2" />
               Generate Report
